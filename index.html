@@ -1,277 +1,77 @@
 <!doctype html>
+<!doctype html>
 <html lang="en">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>.ceasar🐝 • Profile</title>
-
-  <!-- Simple, modern reset + Google font -->
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
-
-  <style>
-    :root{
-      --bg: #f6f7fb;
-      --card: #ffffff;
-      --accent: #6bc22e;
-      --muted: #6b7280;
-      --accent-dark: #a11343;
-      --glass: rgba(255,255,255,0.6);
-    }
-
-    *{box-sizing:border-box}
-    html,body{height:100%}
-    body{
-      margin:0;
-      font-family: "Inter", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
-      background: linear-gradient(180deg, #f7fafc 0%, #efeef5 100%);
-      color:#111827;
-      -webkit-font-smoothing:antialiased;
-      -moz-osx-font-smoothing:grayscale;
-      padding:32px;
-      display:flex;
-      align-items:center;
-      justify-content:center;
-    }
-
-    .container{
-      width:100%;
-      max-width:1100px;
-      background:var(--card);
-      border-radius:14px;
-      box-shadow: 0 10px 30px rgba(16,24,40,0.08);
-      overflow:hidden;
-      display:grid;
-      grid-template-columns: 1fr 420px;
-      gap:0;
-    }
-
-    /* Left (hero + content) */
-    .left{
-      padding:36px;
-    }
-
-    .badge{
-      display:inline-flex;
-      gap:10px;
-      align-items:center;
-      background:linear-gradient(90deg,var(--accent) 0%, #53b03a 100%);
-      color:white;
-      padding:8px 12px;
-      border-radius:999px;
-      font-weight:600;
-      font-size:13px;
-      width:fit-content;
-      box-shadow: 0 6px 18px rgba(107,194,46,0.18);
-    }
-
-    .title{
-      margin:18px 0 8px 0;
-      font-size:34px;
-      font-weight:800;
-      letter-spacing:-0.5px;
-      color:var(--accent-dark);
-      display:flex;
-      align-items:center;
-      gap:12px;
-    }
-
-    .subtitle{
-      margin:0 0 18px 0;
-      color:var(--muted);
-      font-size:14px;
-    }
-
-    .hero-row{
-      display:flex;
-      gap:16px;
-      align-items:center;
-      margin-bottom:22px;
-    }
-
-    .avatar{
-      width:84px;
-      height:84px;
-      border-radius:14px;
-      background:linear-gradient(135deg,#ffdd57,#ff8a00);
-      display:flex;
-      align-items:center;
-      justify-content:center;
-      color:#111;
-      font-weight:800;
-      font-size:28px;
-      box-shadow: 0 8px 20px rgba(0,0,0,0.06);
-    }
-
-    .bio{
-      font-size:14px;
-      color:#333;
-      line-height:1.45;
-    }
-
-    .cta-row{
-      display:flex;
-      gap:12px;
-      margin-top:18px;
-    }
-
-    .btn{
-      padding:10px 16px;
-      border-radius:10px;
-      border:0;
-      cursor:pointer;
-      font-weight:600;
-      font-size:14px;
-    }
-
-    .btn-primary{
-      background:var(--accent);
-      color:white;
-      box-shadow: 0 8px 20px rgba(107,194,46,0.12);
-    }
-    .btn-ghost{
-      background:transparent;
-      border:1px solid #e6e9ef;
-      color:var(--muted);
-    }
-
-    /* Right column: iframe + details */
-    .right{
-      padding:18px;
-      border-left: 1px solid #f1f3f6;
-      background: linear-gradient(180deg, rgba(161,19,67,0.02) 0%, rgba(107,194,46,0.01) 100%);
-    }
-
-    .player-wrap{
-      background: #000;
-      border-radius:10px;
-      overflow:hidden;
-      height:260px;
-      display:flex;
-      align-items:center;
-      justify-content:center;
-    }
-
-    .player-wrap iframe{
-      width:100%;
-      height:100%;
-      border:0;
-      display:block;
-    }
-
-    .info{
-      margin-top:14px;
-      font-size:13px;
-      color:var(--muted);
-    }
-
-    .list{
-      margin-top:14px;
-      display:flex;
-      flex-direction:column;
-      gap:10px;
-    }
-
-    .list .item{
-      background:var(--glass);
-      padding:10px;
-      border-radius:10px;
-      font-size:13px;
-      color:#143;
-    }
-
-    footer{
-      margin-top:20px;
-      font-size:12px;
-      color:var(--muted);
-      text-align:center;
-    }
-
-    /* responsive */
-    @media (max-width:980px){
-      .container{grid-template-columns:1fr; padding:0}
-      .right{order:2;border-left:0;border-top:1px solid #f1f3f6}
-    }
-  </style>
+  <title>.ceasar 🐝</title>
+  <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
-  <div class="container" role="main">
-    <div class="left">
-      <div class="badge">.ceasar <span style="opacity:0.9;font-weight:700;">🐝🐝</span></div>
+<body class="bg-gradient-to-b from-pink-100 to-white text-gray-800 font-sans">
+  <div class="max-w-6xl mx-auto p-6">
+    <!-- Hero Section -->
+    <div class="flex flex-col md:flex-row items-center md:items-start md:space-x-8 bg-white rounded-2xl shadow-lg overflow-hidden">
+      <!-- Left: Info -->
+      <div class="flex-1 p-6">
+        <span class="inline-flex items-center px-3 py-1 rounded-full text-white bg-green-600 font-semibold">
+          .ceasar 🐝🐝
+        </span>
 
-      <div class="hero-row">
-        <div class="avatar">C</div>
-        <div>
-          <h1 class="title">CEASAR <span style="font-size:15px;font-weight:600;color:var(--muted);">• Web & Dev</span></h1>
-          <p class="subtitle">Teacher • Builder • Mobile-friendly coding tips</p>
-          <p class="bio">I teach web development and help people code on any device. Learn HTML, CSS, JavaScript, and how to ship real projects — even from an Android phone.</p>
-
-          <div class="cta-row">
-            <button class="btn btn-primary" onclick="scrollToSection('learn')">Free Training</button>
-            <button class="btn btn-ghost" onclick="openResume()">View Profile</button>
+        <div class="mt-4 flex items-center space-x-4">
+          <div class="w-20 h-20 rounded-xl bg-gradient-to-br from-yellow-400 to-orange-500 flex items-center justify-center text-3xl font-bold">
+            C
+          </div>
+          <div>
+            <h1 class="text-3xl font-extrabold text-pink-700">CEASAR</h1>
+            <p class="text-gray-500 text-sm">Teacher • Web Developer • Mobile Coding</p>
           </div>
         </div>
-      </div>
 
-      <section id="learn" style="margin-top:22px;">
-        <h3 style="margin:0 0 8px 0">How to code on Android (quick)</h3>
-        <p style="margin:0;color:var(--muted);font-size:14px;line-height:1.5;">
-          Use apps like <strong>Dcoder</strong>, <strong>Spck</strong>, or <strong>Termux</strong>. For full projects, use Git + a cloud editor (Replit, Gitpod) or push code via Git to preview. Small edits & learning work great directly on-device.
+        <p class="mt-4 text-gray-700">
+          I teach web development and show people how to code on any device — even Android phones. Learn HTML, CSS, JavaScript, and build projects on the go 🚀.
         </p>
 
-        <div class="list" style="margin-top:12px;">
-          <div class="item"><strong>Dcoder</strong> — multi-language editor & compiler, easy to start.</div>
-          <div class="item"><strong>Spck Code Editor</strong> — great for HTML/CSS/JS, git support.</div>
-          <div class="item"><strong>Termux</strong> — terminal with package manager for advanced workflows.</div>
+        <div class="mt-6 flex space-x-3">
+          <button class="px-5 py-2 bg-green-600 text-white rounded-lg hover:bg-green-700">Free Training</button>
+          <button class="px-5 py-2 border border-gray-300 rounded-lg text-gray-600 hover:bg-gray-100">View Profile</button>
         </div>
-      </section>
+      </div>
 
-      <footer>
-        Made with 🐝 by CEASAR — <small style="display:block;margin-top:6px">Want this page branded for you? Copy this HTML and edit the text & colors.</small>
-      </footer>
+      <!-- Right: Player -->
+      <div class="w-full md:w-96 bg-gray-50 p-4 border-t md:border-t-0 md:border-l">
+        <h2 class="font-bold text-gray-800 mb-2">Live Preview</h2>
+        <div class="aspect-video bg-black rounded-lg overflow-hidden">
+          <iframe 
+            src="https://kiron.streamamg.com/063/football-league-7by87zywt0u40h8wlw1b.html" 
+            allowfullscreen 
+            class="w-full h-full border-0">
+          </iframe>
+        </div>
+        <p class="mt-2 text-sm text-gray-500">
+          Embedded stream or project preview.
+        </p>
+      </div>
     </div>
 
-    <aside class="right" aria-label="Media & Quick links">
-      <div style="display:flex;align-items:center;gap:12px;">
-        <div style="flex:1">
-          <div style="font-weight:700;color:var(--accent-dark)">Live Preview</div>
-          <div style="font-size:12px;color:var(--muted)">Streaming / embedded player</div>
-        </div>
-        <div style="font-size:12px;color:var(--muted);text-align:right">.ceasar</div>
-      </div>
+    <!-- Learning Section -->
+    <div class="mt-10">
+      <h3 class="text-xl font-bold text-gray-800">How to code on Android 📱</h3>
+      <p class="mt-2 text-gray-600 text-sm">
+        Use apps like <span class="font-semibold">Dcoder</span>, <span class="font-semibold">Spck</span>, or <span class="font-semibold">Termux</span>.
+        For full projects, try GitHub + cloud editors (Replit, Gitpod). Great for small edits and learning on the go.
+      </p>
 
-      <div class="player-wrap" style="margin-top:12px;">
-        <!-- Responsive iframe: replace src with content you control -->
-        <iframe src="https://kiron.streamamg.com/063/football-league-7by87zywt0u40h8wlw1b.html" allowfullscreen scrolling="no" title="Live stream"></iframe>
-      </div>
+      <ul class="mt-4 space-y-2">
+        <li class="p-3 bg-green-50 rounded-lg text-gray-700"><strong>Dcoder</strong> — multi-language editor & compiler.</li>
+        <li class="p-3 bg-blue-50 rounded-lg text-gray-700"><strong>Spck Code Editor</strong> — great for web dev, git support.</li>
+        <li class="p-3 bg-purple-50 rounded-lg text-gray-700"><strong>Termux</strong> — terminal + Linux tools on Android.</li>
+      </ul>
+    </div>
 
-      <div class="info">
-        <strong>Quick tips:</strong>
-        <ul style="margin:8px 0 0 18px;color:var(--muted)">
-          <li>Always clone data when you need an immutable baseline (JS objects are references).</li>
-          <li>Keep a mobile-friendly layout if you teach on Android phones.</li>
-        </ul>
-      </div>
-
-      <div style="margin-top:12px">
-        <div style="font-weight:700;margin-bottom:8px">Resources</div>
-        <div class="list">
-          <div class="item">Replit — instant cloud IDE</div>
-          <div class="item">MDN Web Docs — learn HTML/CSS/JS</div>
-        </div>
-      </div>
-    </aside>
+    <!-- Footer -->
+    <footer class="mt-10 text-center text-gray-400 text-sm">
+      Made with 🐝 by <span class="font-semibold text-gray-500">CEASAR</span>
+    </footer>
   </div>
-
-  <script>
-    function scrollToSection(id){
-      const el = document.getElementById(id);
-      if(el) el.scrollIntoView({behavior:'smooth', block:'start'});
-    }
-    function openResume(){
-      alert("This could open your resume or profile page — replace with a real link.");
-    }
-  </script>
 </body>
 </html>
-
-
